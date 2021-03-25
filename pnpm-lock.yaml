@@ -1,12 +1,31 @@
 dependencies:
   compare-func: 2.0.0
   q: 1.5.1
+devDependencies:
+  clean-publish: 2.1.1
 lockfileVersion: 5.2
 packages:
   /array-ify/1.0.0:
     dev: false
     resolution:
       integrity: sha1-nlKHYrSpBmrRY6aWKjZEGOlibs4=
+  /at-least-node/1.0.0:
+    dev: true
+    engines:
+      node: '>= 4.0.0'
+    resolution:
+      integrity: sha512-+q/t7Ekv1EDY2l6Gda6LLiX14rU9TV20Wa3ofeQmwPFZbOMo9DXrLbOjFaaclkXKWidIaopwAObQDqwWtGUjqg==
+  /clean-publish/2.1.1:
+    dependencies:
+      cross-spawn: 7.0.3
+      fs-extra: 9.1.0
+      lilconfig: 2.0.2
+    dev: true
+    engines:
+      node: ^10.17.0 || ^12.0.0 || >=14.0.0
+    hasBin: true
+    resolution:
+      integrity: sha512-IO0aLHoeSK23rIJ7Epvb/3wAstsehvJaPi5cv6zQrvmpBHjJ0AaLzbiDlPfxSWBRCQQ8S6UcHk65IMiIyAWI6Q==
   /compare-func/2.0.0:
     dependencies:
       array-ify: 1.0.0
@@ -14,6 +33,16 @@ packages:
     dev: false
     resolution:
       integrity: sha512-zHig5N+tPWARooBnb0Zx1MFcdfpyJrfTJ3Y5L+IFvUm8rM74hHz66z0gw0x4tijh5CorKkKUCnW82R2vmpeCRA==
+  /cross-spawn/7.0.3:
+    dependencies:
+      path-key: 3.1.1
+      shebang-command: 2.0.0
+      which: 2.0.2
+    dev: true
+    engines:
+      node: '>= 8'
+    resolution:
+      integrity: sha512-iRDPJKUPVEND7dHPO8rkbOnPpyDygcDFtWjpeWNCgy8WP2rXcxXL8TskReQl6OrB2G7+UJrags1q15Fudc7G6w==
   /dot-prop/5.3.0:
     dependencies:
       is-obj: 2.0.0
@@ -22,12 +51,51 @@ packages:
       node: '>=8'
     resolution:
       integrity: sha512-QM8q3zDe58hqUqjraQOmzZ1LIH9SWQJTlEKCH4kJ2oQvLZk7RbQXvtDM2XEq3fwkV9CCvvH4LA0AV+ogFsBM2Q==
+  /fs-extra/9.1.0:
+    dependencies:
+      at-least-node: 1.0.0
+      graceful-fs: 4.2.6
+      jsonfile: 6.1.0
+      universalify: 2.0.0
+    dev: true
+    engines:
+      node: '>=10'
+    resolution:
+      integrity: sha512-hcg3ZmepS30/7BSFqRvoo3DOMQu7IjqxO5nCDt+zM9XWjb33Wg7ziNT+Qvqbuc3+gWpzO02JubVyk2G4Zvo1OQ==
+  /graceful-fs/4.2.6:
+    dev: true
+    resolution:
+      integrity: sha512-nTnJ528pbqxYanhpDYsi4Rd8MAeaBA67+RZ10CM1m3bTAVFEDcd5AuA4a6W5YkGZ1iNXHzZz8T6TBKLeBuNriQ==
   /is-obj/2.0.0:
     dev: false
     engines:
       node: '>=8'
     resolution:
       integrity: sha512-drqDG3cbczxxEJRoOXcOjtdp1J/lyp1mNn0xaznRs8+muBhgQcrnbspox5X5fOw0HnMnbfDzvnEMEtqDEJEo8w==
+  /isexe/2.0.0:
+    dev: true
+    resolution:
+      integrity: sha1-6PvzdNxVb/iUehDcsFctYz8s+hA=
+  /jsonfile/6.1.0:
+    dependencies:
+      universalify: 2.0.0
+    dev: true
+    optionalDependencies:
+      graceful-fs: 4.2.6
+    resolution:
+      integrity: sha512-5dgndWOriYSm5cnYaJNhalLNDKOqFwyDB/rr1E9ZsGciGvKPs8R2xYGCacuf3z6K1YKDz182fd+fY3cn3pMqXQ==
+  /lilconfig/2.0.2:
+    dev: true
+    engines:
+      node: '>=10'
+    resolution:
+      integrity: sha512-4zUThttj8TQ4N7Pps92Z79jPf1OMcll4m61pivQSVk5MT78hVhNa2LrKTuNYD0AGLpmpf7zeIKOxSt6hHBfypw==
+  /path-key/3.1.1:
+    dev: true
+    engines:
+      node: '>=8'
+    resolution:
+      integrity: sha512-ojmeN0qd+y0jszEtoY48r0Peq5dwMEkIlCOu6Q5f41lfkswXuKtYrhgoTpLnyIcHm24Uhqx+5Tqm2InSwLhE6Q==
   /q/1.5.1:
     dev: false
     engines:
@@ -35,6 +103,36 @@ packages:
       teleport: '>=0.2.0'
     resolution:
       integrity: sha1-fjL3W0E4EpHQRhHxvxQQmsAGUdc=
+  /shebang-command/2.0.0:
+    dependencies:
+      shebang-regex: 3.0.0
+    dev: true
+    engines:
+      node: '>=8'
+    resolution:
+      integrity: sha512-kHxr2zZpYtdmrN1qDjrrX/Z1rR1kG8Dx+gkpK1G4eXmvXswmcE1hTWBWYUzlraYw1/yZp6YuDY77YtvbN0dmDA==
+  /shebang-regex/3.0.0:
+    dev: true
+    engines:
+      node: '>=8'
+    resolution:
+      integrity: sha512-7++dFhtcx3353uBaq8DDR4NuxBetBzC7ZQOhmTQInHEd6bSrXdiEyzCvG07Z44UYdLShWUyXt5M/yhz8ekcb1A==
+  /universalify/2.0.0:
+    dev: true
+    engines:
+      node: '>= 10.0.0'
+    resolution:
+      integrity: sha512-hAZsKq7Yy11Zu1DE0OzWjw7nnLZmJZYTDZZyEFHZdUhV8FkH5MCfoU1XMaxXovpyW5nq5scPqq0ZDP9Zyl04oQ==
+  /which/2.0.2:
+    dependencies:
+      isexe: 2.0.0
+    dev: true
+    engines:
+      node: '>= 8'
+    hasBin: true
+    resolution:
+      integrity: sha512-BLI3Tl1TW3Pvl70l3yq3Y64i+awpwXqsGBYWkkqMtnbXgrMD+yj7rhW0kuEDxzJaYXGjEW5ogapKNMEKNMjibA==
 specifiers:
+  clean-publish: 2.1.1
   compare-func: ^2.0.0
   q: ^1.5.1
