@@ -41,6 +41,8 @@ function getWriterOpts () {
         commit.type = 'Performance Improvements'
       } else if (commit.type === 'revert' || commit.revert) {
         commit.type = 'Reverts'
+      } else if (commit.type === `deps`) {
+        commit.type = `Dependencies`
       } else if (discard) {
         return
       } else if (commit.type === 'docs') {
