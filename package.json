@@ -14,16 +14,10 @@
     "publish": "clean-publish"
   },
   "files": [
-    "conventional-changelog.js",
-    "conventional-recommended-bump.js",
-    "index.js",
-    "parser-opts.js",
-    "writer-opts.js",
-    "templates"
+    "index.js"
   ],
   "dependencies": {
-    "compare-func": "^2.0.0",
-    "q": "^1.5.1"
+    "conventional-changelog-conventionalcommits": "4.5.0"
   },
   "devDependencies": {
     "clean-publish": "2.1.1"
