@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.2.0](https://github.com/djaler/conventional-changelog-standard/compare/v1.1.0...v1.2.0) (2021-03-25)
+
+
+### Features
+
+* extend preset from conventional-changelog-conventionalcommits ([02d5f1c](https://github.com/djaler/conventional-changelog-standard/commit/02d5f1ce7abd5c1c3e01e60b27d30943c596c963))
+
 ## 1.1.0 (2021-03-25)
 
 
